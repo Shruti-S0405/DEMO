@@ -1,100 +1,89 @@
-*{
-    margin:0;
-    padding:0
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
     font-family: sans-serif;
-
-}
-
-.hero{
+  }
+  
+  .hero {
     position: relative;
     width: 100%;
     height: 10vh;
     background-color: beige;
-}
-
-nav{
-    display:flex;
-    width:84%;
+  }
+  
+  nav {
+    display: flex;
+    width: 84%;
     margin: auto;
     padding: 20px 0;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
-}
-
-nav ul li{
-    display: inline-block;
+  }
+  
+  nav ul {
+    display: flex; /* Change to flex to ensure flex items can wrap */
+  }
+  
+  nav ul li {
     list-style: none;
-    margin: 10px 20px;
-    padding-bottom: 80px;
-    /* padding-left: 20px; */
-}
-
-nav ul li a{
+    margin: 0 10px; /* Adjust margin for spacing */
+  }
+  
+  nav ul li a {
     text-decoration: none;
-    color:black;
-    font-weight: bold;
-}
-
-nav ul li a:hover{
-    color:red
-}
-
-nav img{
-    max-width: 10%;
-    height:auto;
-    border-radius: 50%;
-}
-
-.home{
-    margin-left: 8%;
-    margin-top: 15%;
-}
-
-.home h1{
-    font-size: 50px;
     color: black;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: red;
+  }
+  
+  nav img {
+    max-width: 100px; /* Adjust maximum width */
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .home {
+    margin: 50px auto; /* Adjust margin for centering */
+    text-align: center; /* Center text */
+  }
+  
+  .home h1 {
+    font-size: 36px; /* Adjust font size */
     margin-bottom: 20px;
-}
-
-.home p{
-    color:grey;
+  }
+  
+  .home p {
+    color: grey;
     line-height: 22px;
-}
-
-.home a{
+  }
+  
+  .home a {
+    display: inline-block;
     background-color: rgb(161, 116, 159);
     padding: 10px 18px;
     text-decoration: none;
     font-weight: bold;
-    color:white;
-    display: inline-block;
+    color: white;
     margin: 30px 0;
     border-radius: 5px;
-}
-
-.images{
-    width: 45%;
-    height: 80%;
+  }
+  
+  .images {
     position: absolute;
     bottom: 0;
-    right:100px;
-
-}
-
-.images img{
-    height: 100%;
-    position: absolute;
-    left:50%;
-    bottom:0;
-    transform: translate(-50%);
-    transform: bottom 1s, left 1s;
-}
-
-.images:hover .shape{
-    bottom: 40px ;
-}
-
-@media screen and (max-width: 768px) {
+    right: 20px; /* Adjust positioning */
+  }
+  
+  .images img.shape {
+    height: auto;
+    max-width: 100%; /* Ensure image is responsive */
+  }
+  
+  @media screen and (max-width: 768px) {
     nav {
       width: 100%;
     }
@@ -112,3 +101,4 @@ nav img{
       font-size: 24px; /* Adjust font size */
     }
   }
+  
