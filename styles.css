@@ -94,3 +94,21 @@ nav img{
     bottom: 40px ;
 }
 
+@media screen and (max-width: 768px) {
+    nav {
+      width: 100%;
+    }
+  
+    nav ul {
+      flex-direction: column; /* Change to column layout for small screens */
+      text-align: center; /* Center items */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
+  
+    .home h1 {
+      font-size: 24px; /* Adjust font size */
+    }
+  }
