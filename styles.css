@@ -1,101 +1,96 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0
     font-family: sans-serif;
-  }
-  
-  .hero {
+
+}
+
+.hero{
     position: relative;
     width: 100%;
-    height: auto; /* Change height to auto for better responsiveness */
+    height: 10vh;
     background-color: beige;
-  }
-  
-  nav {
-    display: flex;
-    flex-wrap: wrap; /* Allow flex items to wrap */
-    justify-content: center; /* Center navigation items */
+}
+
+nav{
+    display:flex;
+    width:84%;
+    margin: auto;
     padding: 20px 0;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-  
-  nav ul li {
-    list-style: none;
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: red;
-  }
-  
-  nav img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  .home {
-    text-align: center;
-    padding: 20px; /* Add padding for better spacing */
-  }
-  
-  .home h1 {
-    font-size: 24px; /* Reduce font size for smaller screens */
-    margin-bottom: 10px; /* Adjust margin */
-  }
-  
-  .home p {
-    font-size: 14px; /* Reduce font size for smaller screens */
-    line-height: 18px; /* Adjust line height */
-  }
-  
-  .home a {
+    align-items:center;
+    justify-content: space-between;
+}
+
+nav ul li{
     display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    padding-bottom: 80px;
+    /* padding-left: 20px; */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:red
+}
+
+nav img{
+    max-width: 10%;
+    height:auto;
+    border-radius: 50%;
+}
+
+.home{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.home h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.home p{
+    color:grey;
+    line-height: 22px;
+}
+
+.home a{
     background-color: rgb(161, 116, 159);
     padding: 10px 18px;
     text-decoration: none;
     font-weight: bold;
-    color: white;
-    margin-top: 20px; /* Adjust margin */
+    color:white;
+    display: inline-block;
+    margin: 30px 0;
     border-radius: 5px;
-  }
-  
-  .images {
-    position: relative; /* Change position to relative */
-    width: 100%; /* Ensure image container takes full width */
-    text-align: center; /* Center the image */
-  }
-  
-  .images img.shape {
-    max-width: 100%; /* Ensure image is responsive */
-  }
-  
-  @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center; /* Center navigation items */
-    }
-  
-    .home h1 {
-      font-size: 20px; /* Reduce font size for smaller screens */
-    }
-  
-    .home p {
-      font-size: 12px; /* Reduce font size for smaller screens */
-    }
-  
-    .home a {
-      margin-top: 10px; /* Adjust margin */
-    }
-  }
-  
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right:100px;
+
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left:50%;
+    bottom:0;
+    transform: translate(-50%);
+    transform: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px ;
+}
+
